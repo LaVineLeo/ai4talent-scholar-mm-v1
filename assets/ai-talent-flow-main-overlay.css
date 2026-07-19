@@ -1,0 +1,249 @@
+.ai-flow-overlay-toggle {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 70;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.9);
+  color: #f8fafc;
+  cursor: pointer;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.26);
+  backdrop-filter: blur(14px);
+}
+
+.ai-flow-overlay-toggle strong {
+  font-size: 14px;
+}
+
+.ai-flow-overlay-toggle span {
+  font-size: 12px;
+  opacity: 0.82;
+}
+
+.ai-flow-overlay {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  bottom: 16px;
+  width: min(420px, calc(100vw - 24px));
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(9, 14, 24, 0.92);
+  color: #e5eef8;
+  box-shadow: 0 24px 60px rgba(2, 6, 23, 0.45);
+  transform: translateX(calc(100% + 24px));
+  transition: transform 220ms ease;
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+.ai-flow-overlay.open {
+  transform: translateX(0);
+}
+
+.ai-flow-overlay-header {
+  padding: 18px 18px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ai-flow-overlay-titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ai-flow-overlay-titlebar h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.ai-flow-overlay-close,
+.ai-flow-overlay-refresh {
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #e5eef8;
+  cursor: pointer;
+}
+
+.ai-flow-overlay-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.ai-flow-overlay-subtitle {
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(229, 238, 248, 0.72);
+}
+
+.ai-flow-overlay-body {
+  flex: 1;
+  overflow: auto;
+  padding: 16px;
+}
+
+.ai-flow-overlay-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ai-flow-overlay-tab {
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  color: #dbe7f4;
+  cursor: pointer;
+}
+
+.ai-flow-overlay-tab.active {
+  background: linear-gradient(135deg, #0f766e, #0ea5a0);
+  color: #effcfb;
+  border-color: transparent;
+}
+
+.ai-flow-overlay-panel {
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ai-flow-overlay-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: rgba(16, 185, 129, 0.12);
+  color: #6ee7b7;
+}
+
+.ai-flow-overlay-status.waiting {
+  background: rgba(245, 158, 11, 0.14);
+  color: #fbbf24;
+}
+
+.ai-flow-overlay-status.warning {
+  background: rgba(248, 113, 113, 0.14);
+  color: #fca5a5;
+}
+
+.ai-flow-overlay-panel h3 {
+  margin: 12px 0 0;
+  font-size: 22px;
+}
+
+.ai-flow-overlay-desc {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(229, 238, 248, 0.76);
+}
+
+.ai-flow-overlay-metrics,
+.ai-flow-overlay-files,
+.ai-flow-overlay-steps {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.ai-flow-overlay-metrics {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ai-flow-overlay-metric,
+.ai-flow-overlay-file,
+.ai-flow-overlay-step {
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ai-flow-overlay-label {
+  font-size: 12px;
+  color: rgba(229, 238, 248, 0.72);
+}
+
+.ai-flow-overlay-value {
+  display: block;
+  margin-top: 6px;
+  font-size: 24px;
+}
+
+.ai-flow-overlay-file-path {
+  font-size: 13px;
+  word-break: break-all;
+}
+
+.ai-flow-overlay-file-meta {
+  margin-top: 6px;
+  font-size: 12px;
+  color: rgba(229, 238, 248, 0.66);
+}
+
+.ai-flow-overlay-link {
+  display: inline-flex;
+  margin-top: 14px;
+  color: #7dd3fc;
+  text-decoration: none;
+}
+
+.ai-flow-overlay-link-row {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.ai-flow-overlay-switch {
+  min-height: 40px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0284c7, #2563eb);
+  color: #eff6ff;
+  cursor: pointer;
+}
+
+.ai-flow-overlay-switch:disabled {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(229, 238, 248, 0.48);
+  cursor: not-allowed;
+}
+
+@media (max-width: 720px) {
+  .ai-flow-overlay {
+    top: auto;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: auto;
+  }
+
+  .ai-flow-overlay-metrics {
+    grid-template-columns: 1fr;
+  }
+}

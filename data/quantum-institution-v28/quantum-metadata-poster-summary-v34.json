@@ -1,0 +1,361 @@
+{
+  "poster_version": "v34",
+  "inputs": {
+    "xlsx_path": "E:\\00 个人项目\\00 AI雷达\\AI人才流动\\data\\dongbi-data\\东壁A+B-155023.xlsx",
+    "dataset_summary_path": "E:\\00 个人项目\\00 AI雷达\\AI人才流动\\scholar-mm-main\\data\\quantum-institution-v28\\dataset-summary-v28.json",
+    "mobility_summary_path": "E:\\00 个人项目\\00 AI雷达\\AI人才流动\\data\\quantum_institution_mobility_v28\\qa\\quantum-institution-mobility-summary-v28.json",
+    "institution_metrics_path": "E:\\00 个人项目\\00 AI雷达\\AI人才流动\\data\\quantum_institution_mobility_v28\\curated\\institution-flow-metrics-v28.csv",
+    "institution_edges_path": "E:\\00 个人项目\\00 AI雷达\\AI人才流动\\data\\quantum_institution_mobility_v28\\curated\\institution-flow-edges-v28.csv",
+    "institution_dimension_path": "E:\\00 个人项目\\00 AI雷达\\AI人才流动\\data\\quantum_institution_mobility_v28\\curated\\institution-dimension-v28.csv"
+  },
+  "headline_metrics": {
+    "paper_count": 155023,
+    "event_count": 1315504,
+    "institution_count": 41163,
+    "institution_transition_count": 327649,
+    "institution_move_edge_count": 107901,
+    "china_city_resolution_rate": 0.973554
+  },
+  "top_countries": [
+    {
+      "country_code": "CN",
+      "country_name": "Peoples R China",
+      "resident_author_count": 115410
+    },
+    {
+      "country_code": "US",
+      "country_name": "USA",
+      "resident_author_count": 97852
+    },
+    {
+      "country_code": "DE",
+      "country_name": "Germany",
+      "resident_author_count": 37912
+    },
+    {
+      "country_code": "JP",
+      "country_name": "Japan",
+      "resident_author_count": 24449
+    },
+    {
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "resident_author_count": 21433
+    },
+    {
+      "country_code": "IT",
+      "country_name": "Italy",
+      "resident_author_count": 20498
+    },
+    {
+      "country_code": "FR",
+      "country_name": "France",
+      "resident_author_count": 16682
+    },
+    {
+      "country_code": "CA",
+      "country_name": "Canada",
+      "resident_author_count": 13349
+    },
+    {
+      "country_code": "IN",
+      "country_name": "India",
+      "resident_author_count": 12951
+    },
+    {
+      "country_code": "ES",
+      "country_name": "Spain",
+      "resident_author_count": 12502
+    },
+    {
+      "country_code": "KR",
+      "country_name": "South Korea",
+      "resident_author_count": 11154
+    },
+    {
+      "country_code": "AU",
+      "country_name": "Australia",
+      "resident_author_count": 8372
+    }
+  ],
+  "top_institutions": [
+    {
+      "location_name": "Univ Sci & Technol China",
+      "country_code": "CN",
+      "resident_author_count": 10803
+    },
+    {
+      "location_name": "Chinese Acad Sci",
+      "country_code": "CN",
+      "resident_author_count": 9985
+    },
+    {
+      "location_name": "Univ Chinese Acad Sci",
+      "country_code": "CN",
+      "resident_author_count": 7156
+    },
+    {
+      "location_name": "MIT",
+      "country_code": "US",
+      "resident_author_count": 7048
+    },
+    {
+      "location_name": "Univ Calif Berkeley",
+      "country_code": "US",
+      "resident_author_count": 5953
+    },
+    {
+      "location_name": "Harvard Univ",
+      "country_code": "US",
+      "resident_author_count": 5634
+    },
+    {
+      "location_name": "Nanjing Univ",
+      "country_code": "CN",
+      "resident_author_count": 5567
+    },
+    {
+      "location_name": "Tsinghua Univ",
+      "country_code": "CN",
+      "resident_author_count": 5459
+    },
+    {
+      "location_name": "Stanford Univ",
+      "country_code": "US",
+      "resident_author_count": 5115
+    },
+    {
+      "location_name": "Univ Calif Santa Barbara",
+      "country_code": "US",
+      "resident_author_count": 4998
+    }
+  ],
+  "top_inflow": [
+    {
+      "location_name": "Univ Sci & Technol China",
+      "country_code": "CN",
+      "inflow_count": 1617
+    },
+    {
+      "location_name": "Chinese Acad Sci",
+      "country_code": "CN",
+      "inflow_count": 1394
+    },
+    {
+      "location_name": "CERN",
+      "country_code": "CH",
+      "inflow_count": 1089
+    },
+    {
+      "location_name": "Tsinghua Univ",
+      "country_code": "CN",
+      "inflow_count": 658
+    },
+    {
+      "location_name": "Nanjing Univ",
+      "country_code": "CN",
+      "inflow_count": 600
+    },
+    {
+      "location_name": "MIT",
+      "country_code": "US",
+      "inflow_count": 568
+    },
+    {
+      "location_name": "Zhejiang Univ",
+      "country_code": "CN",
+      "inflow_count": 561
+    },
+    {
+      "location_name": "Natl Univ Singapore",
+      "country_code": "SG",
+      "inflow_count": 544
+    },
+    {
+      "location_name": "Peking Univ",
+      "country_code": "CN",
+      "inflow_count": 518
+    },
+    {
+      "location_name": "Harvard Univ",
+      "country_code": "US",
+      "inflow_count": 481
+    }
+  ],
+  "top_outflow": [
+    {
+      "location_name": "Chinese Acad Sci",
+      "country_code": "CN",
+      "outflow_count": 1781
+    },
+    {
+      "location_name": "Univ Sci & Technol China",
+      "country_code": "CN",
+      "outflow_count": 1752
+    },
+    {
+      "location_name": "Tsinghua Univ",
+      "country_code": "CN",
+      "outflow_count": 819
+    },
+    {
+      "location_name": "Nanjing Univ",
+      "country_code": "CN",
+      "outflow_count": 764
+    },
+    {
+      "location_name": "Univ Calif Berkeley",
+      "country_code": "US",
+      "outflow_count": 751
+    },
+    {
+      "location_name": "MIT",
+      "country_code": "US",
+      "outflow_count": 726
+    },
+    {
+      "location_name": "Natl Univ Singapore",
+      "country_code": "SG",
+      "outflow_count": 641
+    },
+    {
+      "location_name": "Peking Univ",
+      "country_code": "CN",
+      "outflow_count": 622
+    },
+    {
+      "location_name": "Harvard Univ",
+      "country_code": "US",
+      "outflow_count": 617
+    },
+    {
+      "location_name": "CERN",
+      "country_code": "CH",
+      "outflow_count": 583
+    }
+  ],
+  "top_corridors": [
+    {
+      "from_location_name": "European Org Nucl Res",
+      "to_location_name": "CERN",
+      "move_year": 2023,
+      "flow_count": 99
+    },
+    {
+      "from_location_name": "European Org Nucl Res CERN",
+      "to_location_name": "CERN",
+      "move_year": 2025,
+      "flow_count": 97
+    },
+    {
+      "from_location_name": "Google Quantum AI",
+      "to_location_name": "Google Res",
+      "move_year": 2025,
+      "flow_count": 90
+    },
+    {
+      "from_location_name": "CERN",
+      "to_location_name": "European Org Nucl Res",
+      "move_year": 2017,
+      "flow_count": 90
+    },
+    {
+      "from_location_name": "European Org Nucl Res",
+      "to_location_name": "CERN",
+      "move_year": 2018,
+      "flow_count": 87
+    },
+    {
+      "from_location_name": "INFN",
+      "to_location_name": "Ist Nazl Fis Nucl",
+      "move_year": 2020,
+      "flow_count": 87
+    },
+    {
+      "from_location_name": "Ist Nazl Fis Nucl",
+      "to_location_name": "INFN",
+      "move_year": 2016,
+      "flow_count": 86
+    },
+    {
+      "from_location_name": "INFN",
+      "to_location_name": "Ist Nazl Fis Nucl",
+      "move_year": 2021,
+      "flow_count": 80
+    },
+    {
+      "from_location_name": "Google Quantum AI",
+      "to_location_name": "Google Res",
+      "move_year": 2022,
+      "flow_count": 79
+    },
+    {
+      "from_location_name": "Microsoft Quantum",
+      "to_location_name": "1 Microsoft Way",
+      "move_year": 2025,
+      "flow_count": 79
+    }
+  ],
+  "top_cities": [
+    {
+      "city_name": "Beijing",
+      "institution_count": 693,
+      "resident_author_count": 47761,
+      "inflow_count": 5923
+    },
+    {
+      "city_name": "Shanghai",
+      "institution_count": 379,
+      "resident_author_count": 21111,
+      "inflow_count": 2771
+    },
+    {
+      "city_name": "Hefei",
+      "institution_count": 158,
+      "resident_author_count": 16359,
+      "inflow_count": 2509
+    },
+    {
+      "city_name": "Nanjing",
+      "institution_count": 192,
+      "resident_author_count": 13624,
+      "inflow_count": 1847
+    },
+    {
+      "city_name": "Wuhan",
+      "institution_count": 165,
+      "resident_author_count": 10575,
+      "inflow_count": 1505
+    },
+    {
+      "city_name": "Hangzhou",
+      "institution_count": 197,
+      "resident_author_count": 8124,
+      "inflow_count": 1223
+    },
+    {
+      "city_name": "Guangzhou",
+      "institution_count": 192,
+      "resident_author_count": 7896,
+      "inflow_count": 1022
+    },
+    {
+      "city_name": "Shenzhen",
+      "institution_count": 267,
+      "resident_author_count": 7399,
+      "inflow_count": 1347
+    },
+    {
+      "city_name": "Xi'an",
+      "institution_count": 172,
+      "resident_author_count": 6413,
+      "inflow_count": 933
+    },
+    {
+      "city_name": "Changchun",
+      "institution_count": 72,
+      "resident_author_count": 5826,
+      "inflow_count": 746
+    }
+  ]
+}

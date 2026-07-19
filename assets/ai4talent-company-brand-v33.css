@@ -1,0 +1,43 @@
+.a4t-company-logo-v33,
+.ai4talent-map-brand-logo-v33,
+.ai4talent-runtime-logo-v33 {
+  display: block;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.a4t-company-logo-v33 {
+  width: 34px;
+  height: 34px;
+}
+
+.a4t-wordmark::before {
+  display: none;
+}
+
+.ai4talent-map-brand-logo-v33 {
+  width: 28px;
+  height: 28px;
+}
+
+.ai4talent-runtime-brand {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+}
+
+.ai4talent-runtime-logo-v33 {
+  width: 28px;
+  height: 28px;
+}
+
+@media (max-width: 860px) {
+  .ai4talent-map-brand {
+    padding-left: 2px;
+  }
+
+  .ai4talent-map-brand-logo-v33 {
+    width: 30px;
+    height: 30px;
+  }
+}

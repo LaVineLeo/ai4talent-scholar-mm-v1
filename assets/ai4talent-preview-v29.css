@@ -1,0 +1,9 @@
+#app > div > aside,
+#app h1,
+#app h1 + p {
+  display: none !important;
+}
+
+#app > div > div:first-child {
+  width: 100vw !important;
+}

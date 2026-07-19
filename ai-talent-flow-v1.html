@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 人才流动地图 v1</title>
+    <meta
+      name="description"
+      content="用于测试 AI 人才流动项目当前真实数据底座接入状态的静态前端页面。"
+    />
+    <link rel="stylesheet" href="./assets/ai-talent-flow-v1.css?v=20260715-2310" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">AI Talent Flow</p>
+        <h1>人才流动地图</h1>
+        <p class="hero-copy">
+          这个页面不展示模拟结果，只展示当前工作区里已经落地的真实数据文件，并支持在全球、中美、中国三种视图之间切换。
+        </p>
+        <div class="hero-actions">
+          <a class="action action-primary" href="./index.html">返回 Scholar-MM 主地图</a>
+          <button class="action action-secondary" id="refreshButton" type="button">刷新状态</button>
+        </div>
+      </header>
+
+      <section class="talent-map-shell">
+        <div class="talent-map-stage">
+          <canvas id="talentFlowCanvas"></canvas>
+          <div class="talent-map-loading" id="talentFlowLoading">正在载入真实流动网络…</div>
+          <div class="talent-map-year" id="talentFlowYear">2020</div>
+          <div class="talent-map-legend" id="talentFlowLegend"></div>
+        </div>
+        <aside class="talent-map-sidebar">
+          <div class="talent-map-sidebar-group">
+            <div class="talent-map-sidebar-label">模式</div>
+            <div class="talent-map-mode-list" id="talentFlowModes"></div>
+          </div>
+          <div class="talent-map-sidebar-group">
+            <div class="talent-map-sidebar-label">时间</div>
+            <div class="talent-map-year-row">
+              <button class="talent-map-button" id="talentFlowPlay" type="button">播放</button>
+              <div class="talent-map-year-text" id="talentFlowYearText">2020</div>
+            </div>
+            <input class="talent-map-range" id="talentFlowYearRange" type="range" min="0" max="0" value="0" />
+          </div>
+          <div class="talent-map-sidebar-group">
+            <div class="talent-map-sidebar-label">播放速度</div>
+            <input class="talent-map-range" id="talentFlowSpeedRange" type="range" min="600" max="2400" step="100" value="1400" />
+          </div>
+          <div class="talent-map-sidebar-group">
+            <div class="talent-map-sidebar-label">标签数量</div>
+            <input class="talent-map-range" id="talentFlowLabelRange" type="range" min="0" max="20" step="1" value="12" />
+          </div>
+          <div class="talent-map-sidebar-group">
+            <div class="talent-map-sidebar-label">点尺寸</div>
+            <input class="talent-map-range" id="talentFlowNodeRange" type="range" min="0.8" max="3" step="0.1" value="1.6" />
+          </div>
+          <div class="talent-map-sidebar-group">
+            <div class="talent-map-sidebar-label">连线透明度</div>
+            <input class="talent-map-range" id="talentFlowEdgeRange" type="range" min="0.02" max="0.35" step="0.01" value="0.12" />
+          </div>
+          <div class="talent-map-sidebar-group">
+            <div class="talent-map-sidebar-label">当前快照</div>
+            <div class="talent-map-stats" id="talentFlowStats"></div>
+          </div>
+        </aside>
+      </section>
+
+      <main id="app" class="content-shell">
+        <section class="panel loading-panel">
+          <p>正在读取前端状态文件…</p>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="./assets/ai-talent-flow-network-v1.js?v=20260715-2310"></script>
+    <script type="module" src="./assets/ai-talent-flow-v1.js?v=20260715-2310"></script>
+  </body>
+  </html>

@@ -1,0 +1,97 @@
+{
+  "snapshot_version": "dongbi-quantum-institution-v28",
+  "xlsx_path": "E:\\00 个人项目\\00 AI雷达\\AI人才流动\\data\\dongbi-data\\东壁A+B-155023.xlsx",
+  "row_count": 155023,
+  "event_count": 1315504,
+  "institution_count": 41163,
+  "institution_author_year_count": 702200,
+  "all_affiliation_author_year_count": 1115748,
+  "institution_transition_count": 327649,
+  "institution_move_edge_count": 107901,
+  "country_count_observed": 149,
+  "china_institution_count": 5861,
+  "china_institution_resolved_city_count": 5706,
+  "china_city_resolution_rate": 0.973554,
+  "top_countries": [
+    [
+      "CN",
+      115410
+    ],
+    [
+      "US",
+      97852
+    ],
+    [
+      "DE",
+      37912
+    ],
+    [
+      "JP",
+      24449
+    ],
+    [
+      "GB",
+      21433
+    ],
+    [
+      "IT",
+      20498
+    ],
+    [
+      "FR",
+      16682
+    ],
+    [
+      "CA",
+      13349
+    ],
+    [
+      "IN",
+      12951
+    ],
+    [
+      "ES",
+      12502
+    ],
+    [
+      "KR",
+      11154
+    ],
+    [
+      "AU",
+      8372
+    ],
+    [
+      "CH",
+      8145
+    ],
+    [
+      "RU",
+      7265
+    ],
+    [
+      "SG",
+      6333
+    ],
+    [
+      "TW",
+      6106
+    ],
+    [
+      "NL",
+      5980
+    ],
+    [
+      "PL",
+      5614
+    ],
+    [
+      "AT",
+      5526
+    ],
+    [
+      "BR",
+      5114
+    ]
+  ]
+}

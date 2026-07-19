@@ -1,0 +1,299 @@
+{
+  "title": "AI 人才流动前端测试页 v1",
+  "generated_at": "2026-07-15T22:28:00",
+  "project_root": "E:\\00 个人项目\\00 AI雷达\\AI人才流动",
+  "overview": {
+    "phase_count": 3,
+    "ready_phase_count": 3,
+    "waiting_phase_count": 0,
+    "warning_phase_count": 0
+  },
+  "display_modes": [
+    {
+      "id": "global",
+      "label": "全球",
+      "status": "ready",
+      "headline": "全球 AI 人才流动",
+      "description": "聚焦国家层流动边、年度指标和全球人才流向底座。",
+      "metrics": [
+        {
+          "label": "国家流动边",
+          "value": 61
+        },
+        {
+          "label": "国家年度指标",
+          "value": 310
+        },
+        {
+          "label": "事件总数",
+          "value": 11631
+        }
+      ],
+      "files": [
+        {
+          "path": "data/mobility_flow_v1/curated/country-flow-edges-v1.csv",
+          "exists": true,
+          "size_bytes": 1959,
+          "row_count": 61
+        },
+        {
+          "path": "data/mobility_flow_v1/curated/country-flow-metrics-v1.csv",
+          "exists": true,
+          "size_bytes": 9598,
+          "row_count": 310
+        },
+        {
+          "path": "data/mobility_flow_v1/qa/mobility-flow-summary-v1.json",
+          "exists": true,
+          "size_bytes": 261
+        }
+      ],
+      "next_steps": []
+    },
+    {
+      "id": "cn-us",
+      "label": "中美",
+      "status": "ready",
+      "headline": "中美 AI 人才对比",
+      "description": "聚焦 CN -> US、US -> CN 双边迁移边，以及中美专题切片。",
+      "metrics": [
+        {
+          "label": "中美双边边数",
+          "value": 2
+        },
+        {
+          "label": "国家流动边",
+          "value": 61
+        },
+        {
+          "label": "迁移事件数",
+          "value": 565
+        }
+      ],
+      "files": [
+        {
+          "path": "data/mobility_flow_v1/curated/cn-us-bilateral-flow-v1.csv",
+          "exists": true,
+          "size_bytes": 189,
+          "row_count": 2
+        },
+        {
+          "path": "data/mobility_flow_v1/curated/country-flow-edges-v1.csv",
+          "exists": true,
+          "size_bytes": 1959,
+          "row_count": 61
+        },
+        {
+          "path": "data/mobility_flow_v1/qa/mobility-flow-summary-v1.json",
+          "exists": true,
+          "size_bytes": 261
+        }
+      ],
+      "next_steps": []
+    },
+    {
+      "id": "china",
+      "label": "中国",
+      "status": "ready",
+      "headline": "中国机构 AI 人才转移",
+      "description": "聚焦中国机构标准层、机构城市解析层和城市流动边生成层。",
+      "metrics": [
+        {
+          "label": "城市字典记录数",
+          "value": 58
+        },
+        {
+          "label": "已解析机构数",
+          "value": 286
+        },
+        {
+          "label": "城市流动边",
+          "value": 14
+        }
+      ],
+      "files": [
+        {
+          "path": "data/reference/china_city_dict_v1.csv",
+          "exists": true,
+          "size_bytes": 4913,
+          "row_count": 58
+        },
+        {
+          "path": "data/city_resolution_v1/curated/institution-city-resolution-v1.csv",
+          "exists": true,
+          "size_bytes": 62583,
+          "row_count": 286
+        },
+        {
+          "path": "data/mobility_flow_v1/curated/city-flow-edges-v1.csv",
+          "exists": true,
+          "size_bytes": 849,
+          "row_count": 14
+        }
+      ],
+      "next_steps": []
+    }
+  ],
+  "phases": [
+    {
+      "id": "reference",
+      "label": "城市标准层",
+      "status": "ready",
+      "summary": "正式输入位已建立，等待真实中国机构标准表填充。",
+      "metrics": [
+        {
+          "label": "城市字典记录数",
+          "value": 58
+        },
+        {
+          "label": "人工纠偏记录数",
+          "value": 0
+        },
+        {
+          "label": "字典校验通过",
+          "value": "是"
+        }
+      ],
+      "files": [
+        {
+          "path": "data/reference/china_city_dict_v1.csv",
+          "exists": true,
+          "size_bytes": 4913,
+          "row_count": 58
+        },
+        {
+          "path": "data/reference/institution_city_override_v1.csv",
+          "exists": true,
+          "size_bytes": 147,
+          "row_count": 0
+        },
+        {
+          "path": "data/reference/china_city_dict_build_report_v1.json",
+          "exists": true,
+          "size_bytes": 482
+        }
+      ]
+    },
+    {
+      "id": "city-resolution",
+      "label": "机构城市解析层",
+      "status": "ready",
+      "summary": "把 OpenAlex institution 映射到中国机构，产出城市归一化结果表。",
+      "metrics": [
+        {
+          "label": "已解析机构数",
+          "value": 286
+        },
+        {
+          "label": "QA 文件存在",
+          "value": "是"
+        }
+      ],
+      "files": [
+        {
+          "path": "data/city_resolution_v1/curated/institution-city-resolution-v1.csv",
+          "exists": true,
+          "size_bytes": 62583,
+          "row_count": 286
+        },
+        {
+          "path": "data/city_resolution_v1/qa/city-resolution-qa-v1.json",
+          "exists": true,
+          "size_bytes": 304
+        }
+      ]
+    },
+    {
+      "id": "mobility",
+      "label": "流动边生成层",
+      "status": "ready",
+      "summary": "从 OpenAlex works/authorships 重建研究者轨迹，再聚合国家流动、中美双边和中国机构转移。",
+      "metrics": [
+        {
+          "label": "国家流动边",
+          "value": 61
+        },
+        {
+          "label": "国家年度指标",
+          "value": 310
+        },
+        {
+          "label": "中美双边边数",
+          "value": 2
+        },
+        {
+          "label": "城市流动边",
+          "value": 14
+        }
+      ],
+      "files": [
+        {
+          "path": "data/mobility_flow_v1/curated/country-flow-edges-v1.csv",
+          "exists": true,
+          "size_bytes": 1959,
+          "row_count": 61
+        },
+        {
+          "path": "data/mobility_flow_v1/curated/country-flow-metrics-v1.csv",
+          "exists": true,
+          "size_bytes": 9598,
+          "row_count": 310
+        },
+        {
+          "path": "data/mobility_flow_v1/curated/cn-us-bilateral-flow-v1.csv",
+          "exists": true,
+          "size_bytes": 189,
+          "row_count": 2
+        },
+        {
+          "path": "data/mobility_flow_v1/curated/city-flow-edges-v1.csv",
+          "exists": true,
+          "size_bytes": 849,
+          "row_count": 14
+        },
+        {
+          "path": "data/mobility_flow_v1/qa/mobility-flow-summary-v1.json",
+          "exists": true,
+          "size_bytes": 261
+        }
+      ],
+      "summary_payload": {
+        "event_count": 11631,
+        "country_author_year_count": 7832,
+        "country_transition_count": 565,
+        "country_move_edge_count": 61,
+        "cn_us_edge_count": 2,
+        "city_author_year_count": 1625,
+        "city_transition_count": 105,
+        "city_move_edge_count": 14
+      }
+    }
+  ],
+  "next_steps": [],
+  "docs": [
+    {
+      "name": "OpenAlex-城市识别实现方案-v1.md",
+      "size_bytes": 10571
+    },
+    {
+      "name": "OpenAlex-流动边生成说明-v1.md",
+      "size_bytes": 5069
+    },
+    {
+      "name": "中国机构字典准备说明-v1.md",
+      "size_bytes": 4523
+    },
+    {
+      "name": "中国机构识别数据设计-v1.md",
+      "size_bytes": 11592
+    },
+    {
+      "name": "分析范围设计-v1.md",
+      "size_bytes": 8627
+    },
+    {
+      "name": "项目说明.md",
+      "size_bytes": 14705
+    }
+  ]
+}

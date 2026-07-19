@@ -1,0 +1,22 @@
+{
+  "dataset_id": "quantum-china-institution-v28",
+  "node_count": 5861,
+  "old_group_count": 254,
+  "new_group_count": 240,
+  "mapped_old_group_count": 246,
+  "unmapped_old_groups": [
+    "Labs 2012",
+    "Mech Engn",
+    "Minist Educ",
+    "Shaanxi Provinc",
+    "Shandong Provin",
+    "Shannxi",
+    "Taiwan",
+    "Xinjiang Uygur"
+  ],
+  "other_low_frequency_node_count": 297,
+  "unresolved_city_node_count": 155,
+  "latin_label_count": 0,
+  "latin_labels": [],
+  "backup_dir": "E:\\00 个人项目\\00 AI雷达\\AI人才流动\\scholar-mm-main\\data\\quantum-china-institution-v28-en-backup-v30"
+}

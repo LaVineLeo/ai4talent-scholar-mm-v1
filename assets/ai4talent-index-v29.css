@@ -1,0 +1,262 @@
+:root {
+  --page-bg: #111513;
+  --band-bg: #181e1b;
+  --panel-bg: #202723;
+  --border: #39443e;
+  --text: #f3f5f3;
+  --muted: #aeb8b1;
+  --green: #42c88a;
+  --coral: #ef6b5b;
+  --yellow: #e5b94f;
+  --cyan: #55b9c2;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--page-bg);
+  font-family: "Microsoft YaHei", "Noto Sans SC", sans-serif;
+}
+
+a { color: inherit; }
+
+.a4t-site-header {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 max(24px, calc((100vw - 1240px) / 2));
+  border-bottom: 1px solid var(--border);
+  background: var(--page-bg);
+}
+
+.a4t-wordmark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.a4t-wordmark::before {
+  content: "";
+  width: 8px;
+  height: 26px;
+  background: var(--green);
+}
+
+.a4t-site-nav {
+  display: flex;
+  gap: 18px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.a4t-site-nav a { text-decoration: none; }
+.a4t-site-nav a:hover { color: var(--text); }
+
+.a4t-hero {
+  position: relative;
+  min-height: 540px;
+  max-height: 680px;
+  height: calc(100vh - 150px);
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.a4t-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.a4t-hero-shade {
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 12, 10, 0.54);
+}
+
+.a4t-hero-content {
+  position: relative;
+  z-index: 1;
+  width: min(1240px, calc(100vw - 48px));
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 42px;
+}
+
+.a4t-kicker {
+  margin: 0;
+  color: #c2d1c7;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.a4t-hero h1 {
+  margin: 8px 0 0;
+  max-width: 760px;
+  font-family: Georgia, "STSong", serif;
+  font-size: 68px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-shadow: 0 3px 18px #000;
+}
+
+.a4t-hero-copy {
+  max-width: 720px;
+  margin: 16px 0 0;
+  color: #e1e8e3;
+  font-size: 16px;
+  line-height: 1.75;
+  text-shadow: 0 2px 10px #000;
+}
+
+.a4t-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.a4t-command {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  border: 1px solid #dfe8e1;
+  border-radius: 4px;
+  background: #edf3ef;
+  color: #142019;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.a4t-command.secondary {
+  background: rgba(17, 21, 19, 0.8);
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.a4t-metrics-band {
+  border-bottom: 1px solid var(--border);
+  background: var(--band-bg);
+}
+
+.a4t-metrics {
+  width: min(1240px, calc(100vw - 48px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.a4t-metric {
+  min-height: 104px;
+  padding: 20px 22px;
+  border-right: 1px solid var(--border);
+}
+
+.a4t-metric:first-child { border-left: 1px solid var(--border); }
+.a4t-metric span { display: block; color: var(--muted); font-size: 12px; }
+.a4t-metric strong { display: block; margin-top: 8px; font-family: Georgia, serif; font-size: 28px; }
+
+.a4t-content {
+  width: min(1240px, calc(100vw - 48px));
+  margin: 0 auto;
+  padding: 44px 0 56px;
+}
+
+.a4t-section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.a4t-section-head h2 {
+  margin: 0;
+  font-family: Georgia, "STSong", serif;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.a4t-section-head p { margin: 0; color: var(--muted); font-size: 13px; }
+
+.a4t-view-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.a4t-view-row {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.8fr) minmax(260px, 1.4fr) repeat(3, minmax(100px, 0.42fr)) auto;
+  align-items: center;
+  gap: 16px;
+  min-height: 96px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--green);
+  border-radius: 6px;
+  background: var(--panel-bg);
+}
+
+.a4t-view-row:nth-child(2) { border-left-color: var(--coral); }
+.a4t-view-row:nth-child(3) { border-left-color: var(--yellow); }
+.a4t-view-row h3 { margin: 0; font-family: Georgia, "STSong", serif; font-size: 21px; }
+.a4t-view-row p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.a4t-view-stat span { display: block; color: var(--muted); font-size: 10px; }
+.a4t-view-stat strong { display: block; margin-top: 4px; font-family: Georgia, serif; font-size: 17px; }
+
+.a4t-data-note {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 46px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.a4t-note h3 { margin: 0; font-size: 14px; }
+.a4t-note p { margin: 8px 0 0; color: var(--muted); font-size: 12px; line-height: 1.7; }
+
+@media (max-width: 980px) {
+  .a4t-view-row { grid-template-columns: 1fr 1fr; }
+  .a4t-view-row p { grid-column: 1 / -1; }
+  .a4t-data-note { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 680px) {
+  .a4t-site-header { padding: 0 16px; }
+  .a4t-site-nav { display: none; }
+  .a4t-hero { min-height: 500px; height: calc(100vh - 90px); }
+  .a4t-hero-content, .a4t-content, .a4t-metrics { width: calc(100vw - 28px); }
+  .a4t-hero h1 { font-size: 48px; }
+  .a4t-hero-copy {
+    padding-right: 8px;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+  }
+  .a4t-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .a4t-metric:nth-child(3) { border-left: 1px solid var(--border); }
+  .a4t-metric { padding: 16px 12px; }
+  .a4t-metric strong { font-size: 22px; }
+  .a4t-view-row { grid-template-columns: 1fr; }
+  .a4t-view-row p { grid-column: auto; }
+  .a4t-command { width: 100%; }
+}

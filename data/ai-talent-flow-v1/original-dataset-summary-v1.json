@@ -1,0 +1,90 @@
+{
+  "generated_at_root": "E:\\00 个人项目\\00 AI雷达\\AI人才流动\\scholar-mm-main\\data",
+  "dataset_count": 3,
+  "datasets": [
+    {
+      "dataset_id": "ai-global",
+      "label": "AI / 全球",
+      "node_count": 85,
+      "year_count": 6,
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "edge_count": 61,
+      "country_group_count": 85,
+      "neighbour_count": 10,
+      "max_exposure_log2": 9.4878,
+      "min_exposure_log": 0
+    },
+    {
+      "dataset_id": "ai-cnus",
+      "label": "AI / 中美",
+      "node_count": 20,
+      "year_count": 6,
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "edge_count": 55,
+      "country_group_count": 20,
+      "neighbour_count": 10,
+      "max_exposure_log2": 9.4878,
+      "min_exposure_log": 0
+    },
+    {
+      "dataset_id": "ai-china",
+      "label": "AI / 中国机构",
+      "node_count": 55,
+      "year_count": 6,
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "edge_count": 14,
+      "country_group_count": 55,
+      "neighbour_count": 10,
+      "max_exposure_log2": 6.9069,
+      "min_exposure_log": 0
+    }
+  ],
+  "index_entries": [
+    {
+      "id": "yearly",
+      "label": "yearly / 3y window"
+    },
+    {
+      "id": "y1",
+      "label": "yearly / 1y window"
+    },
+    {
+      "id": "coarse",
+      "label": "3-year blocks"
+    },
+    {
+      "id": "ai-global",
+      "label": "AI / 全球"
+    },
+    {
+      "id": "ai-cnus",
+      "label": "AI / 中美"
+    },
+    {
+      "id": "ai-china",
+      "label": "AI / 中国机构"
+    }
+  ],
+  "python_version": "3.12.10"
+}

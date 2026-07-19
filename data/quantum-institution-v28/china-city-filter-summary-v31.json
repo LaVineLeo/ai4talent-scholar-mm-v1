@@ -1,0 +1,15 @@
+{
+  "dataset_id": "quantum-china-institution-v28",
+  "source_node_count": 5861,
+  "visible_node_count": 5409,
+  "hidden_node_count": 452,
+  "hidden_node_counts": {
+    "城市未解析": 155,
+    "其他低频城市": 297
+  },
+  "visible_group_count": 238,
+  "visible_edge_count": 21266,
+  "visible_total_flow_count": 25383,
+  "hidden_labels_present": [],
+  "backup_dir": "E:\\00 个人项目\\00 AI雷达\\AI人才流动\\scholar-mm-main\\data\\quantum-china-institution-v28-zh-full-backup-v31"
+}
